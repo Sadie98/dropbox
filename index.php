@@ -16,17 +16,23 @@
     <div class="nav-wrapper container">
         <span class="brand-logo">Sadie-dropbox</span>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Войти</a></li>
-            <li><a href="#">Зарегистрироваться</a></li>
+            <li>
+                <a class="waves-effect waves-light btn modal-trigger pink lighten-2" href="#authorization">Авторизация</a>
+            </li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Войти</a></li>
-            <li><a href="#">Зарегистрироваться</a></li>
+            <li>
+                <a class="waves-effect waves-light btn modal-trigger pink lighten-2" href="#authorization">Авторизация</a>
+            </li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
 </nav>
+
+<?
+include("tpl/authorization.php");
+?>
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
