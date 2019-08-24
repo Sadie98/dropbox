@@ -1,5 +1,5 @@
 $(function(){
-	$('.modal').modal();
+	$('.modal').modal({ dismissible:false });
 
 	$('#authorization a.btn.sign-in').click(function(){
 		var email = $('#email').val();
@@ -8,7 +8,7 @@ $(function(){
 		console.log(email);
 		$.post("../modules/login.php", { email:email, password:password })
 			.done(function(data){
-				alert( "Data Loaded: " + data );
+				$('.modal').modal('close');
 			});
 	});
 
@@ -19,7 +19,7 @@ $(function(){
 		console.log(email);
 		$.post("../modules/reg.php", { email:email, password:password })
 			.done(function(data){
-				alert( "Data Loaded: " + data );
+				$('.modal').modal('close');
 			});
 	});
 });

@@ -4,11 +4,11 @@ if(!$dbh) include('dbh.php');
 
 if(isset($_POST['email']) && isset($_POST['password'])){
 	try{
-		$res = $dbh->query("SELECT 1 FROM `users` WHERE `email` = '".$_POST['email']."' AND `pw` = '".$_POST['password']."'")->fetch(PDO::FETCH_NUM);
+		$res = $dbh->query("SELECT `user_id` FROM `users` WHERE `email` = '".$_POST['email']."' AND `pw` = '".$_POST['password']."'")->fetch();
 
-		if($res[0]) $authorized = true;
+		if($res[0]) $_SESSION['logged_in'] = $res[0];
 	}catch(Exception $e){
-		return $e->getMessage();
+		var_dump($e);
 	}
 }
 
