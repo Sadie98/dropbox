@@ -19,7 +19,7 @@
 	    </div>
     </div>
     <div class="modal-footer">
-	    <a class="waves-effect waves-light pink lighten-2 btn sign-in">Войти</a>
-	    <a class="waves-effect waves-light pink lighten-2 btn sign-up">Зарегистрироваться</a>
+	    <a class="waves-effect waves-light pink darken-4 btn sign-in">Войти</a>
+	    <a class="waves-effect waves-light pink darken-4 btn sign-up">Зарегистрироваться</a>
     </div>
 </div>
