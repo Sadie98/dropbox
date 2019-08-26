@@ -25,6 +25,10 @@ include(__DIR__.'/../chunks/header.php'); ?>
 		</div>
 	</div>
 </nav>
+<div class="add">
+    <a class="waves-effect waves-light pink lighten-3 btn"><i class="material-icons left">add</i>Новый файл</a>
+    <a class="waves-effect waves-light pink lighten-3 btn"><i class="material-icons left">create_new_folder</i>Новая папка</a>
+</div>
 
 <? include_once(__DIR__.'/../chunks/authorization.php'); ?>
 
